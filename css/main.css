@@ -6,6 +6,12 @@ body { font-family: Helvetica, Arial, sans-serif; }
     max-width: 1200px;
 }
 
+.nav {
+    display: inline-block;
+    width: 15%;
+    float: right;
+}
+
 .box {
     background-color: #8ea86e;
     color: #fff;
@@ -16,10 +22,31 @@ body { font-family: Helvetica, Arial, sans-serif; }
 }
 
 .logo {
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+    display: inline-block;
 }
+
+#burgerCon {
+    margin-bottom: 20px;
+    position: fixed;
+    top: 85px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+
+
+    /* this should be off by default and toggled on with javascript */
+    display: none;
+}
+
+.show-mobile-nav { display: block !important; }
+
+#burgerCon li { 
+    padding: 20px; 
+    border-top: thin solid #666; 
+    text-align: center; 
+}
+
+#burgerCon a { text-decoration: none; color: #8ea86e; }
 
 @media screen and (min-width: 600px) {
     #mainHeader {
